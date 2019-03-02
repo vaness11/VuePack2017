@@ -44,10 +44,10 @@ namespace VuePack
             return data as BitmapSource;
         }
 
-        protected HtmlCompletion CreateItem(string name, string description, ICompletionSession session)
-        {
-            string desc = description + Environment.NewLine + Environment.NewLine + Vsix.Name;
-            return new HtmlCompletion(name, name, desc, _icon, null, session);
-        }
-    }
+		protected HtmlCompletion CreateItem(string name, string description, ICompletionSession session)
+		{
+			string desc = description + Environment.NewLine + Environment.NewLine + Vsix.Name;
+			return new HtmlCompletion(name, name, desc, _icon, null, session);
+		}
+	}
 }
