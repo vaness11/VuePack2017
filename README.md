@@ -2,9 +2,7 @@
 
 #### This branch supports VueJS 2.6.
 
-
-Download original extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.VuejsPack-18329)
-or get the [CI build](http://vsixgallery.com/extension/4163aa08-9878-4b1c-a1ee-58ab67f7db5b/).
+Download extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=IvanG.Vuejs2pack).
 
 ---------------------------------------
 
