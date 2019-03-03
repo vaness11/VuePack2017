@@ -7,12 +7,13 @@ namespace VuePack
 {
 				static class Vsix
 				{
-								public const string Id = "4163aa08-9878-4b1c-a1ee-58ab67f7db5b";
+								public const string Id = "2c334a2f-7ee5-4931-a7bf-245bb02801e8";
 								public const string Name = "Vue.js 2 Pack 2017";
-								public const string Description = @"Contains HTML Intellisense and code snippets for the Vue.js JavaScript library";
+								public const string Description = @"Contains HTML Intellisense and code snippets for the Vue.js 2.6 JavaScript library.
+Based on Mads Kristensen original extension VuePack2017.";
 								public const string Language = "en-US";
 								public const string Version = "2.0";
-								public const string Author = "vaness11, Mads Kristensen";
-								public const string Tags = "vue.js, snippets, javascript";
+								public const string Author = "Ivan G";
+								public const string Tags = "vue.js, snippets, javascript, vuejs, vue";
 				}
 }
