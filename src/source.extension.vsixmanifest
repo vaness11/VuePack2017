@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="2c334a2f-7ee5-4931-a7bf-245bb02801e8" Version="2.0" Language="en-US" Publisher="Ivan G" />
+        <Identity Id="2c334a2f-7ee5-4931-a7bf-245bb02801e8" Version="2.1" Language="en-US" Publisher="Ivan G" />
         <DisplayName>Vue.js 2 Pack 2017</DisplayName>
         <Description xml:space="preserve">Contains HTML Intellisense and code snippets for the Vue.js 2.6 JavaScript library.
 Based on Mads Kristensen original extension VuePack2017.</Description>

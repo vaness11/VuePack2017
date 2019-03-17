@@ -48,13 +48,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ComponentData.cs" />
+    <Compile Include="Helpers\ComponentDataParser.cs" />
     <Compile Include="Helpers\ProjectHelpers.cs" />
+    <Compile Include="HTML\Completion\AttributeComponentCompletion.cs" />
     <Compile Include="HTML\Completion\AttributeDirectiveCompletion.cs" />
+    <Compile Include="HTML\Completion\ElementComponentCompletion.cs" />
     <Compile Include="HTML\Completion\ElementDirectiveCompletion.cs" />
     <Compile Include="HTML\ContentType\VueContentTypeDefinition.cs" />
     <Compile Include="HTML\Completion\BaseCompletion.cs" />
     <Compile Include="HTML\Completion\ElementCompletion.cs" />
     <Compile Include="HTML\Completion\AttributeCompletion.cs" />
+    <Compile Include="HTML\ComponentsCache.cs" />
     <Compile Include="HTML\DirectivesCache.cs" />
     <Compile Include="HTML\VueCreationListener.cs" />
     <Compile Include="Images.imagemanifest.cs">
@@ -251,6 +256,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\Microsoft.Web.Editor.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />

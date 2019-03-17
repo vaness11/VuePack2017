@@ -141,22 +141,6 @@ namespace VuePack
 			},
 		};
 
-		Dictionary<string, string> _coreDirectiveShortcuts = new Dictionary<string, string>
-		{
-			{
-				"@",
-				"Shorthand for v-on."
-			},
-			{
-				":",
-				"Shorthand for v-bind."
-			},
-			{
-				"#",
-				"Shorthand for v-slot."
-			},
-		};
-
 		Dictionary<string, string> _coreAttrs = new Dictionary<string, string>
 		{ 
 			{

@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 using EnvDTE;
+using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 
 namespace VuePack
 {
@@ -42,5 +44,32 @@ namespace VuePack
 
             return null;
         }
-    }
+
+		public static void Log(string text)
+		{
+			ThreadHelper.ThrowIfNotOnUIThread();
+			const int VISIBLE = 1;
+			const int DO_NOT_CLEAR_WITH_SOLUTION = 0;
+
+			// Get the output window
+			var outputWindow = Package.GetGlobalService(typeof(SVsOutputWindow)) as IVsOutputWindow;
+			int hr;
+
+			var guidPane = Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.GeneralPane_guid;
+			hr = outputWindow.CreatePane(guidPane, "General", VISIBLE, DO_NOT_CLEAR_WITH_SOLUTION);
+			Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);
+
+			// Get the pane
+			IVsOutputWindowPane outputWindowPane = null;
+			hr = outputWindow.GetPane(guidPane, out outputWindowPane);
+			Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(hr);
+
+			// Output the text
+			if (outputWindowPane != null)
+			{
+				outputWindowPane.Activate();
+				outputWindowPane.OutputString("Vue2Pack: " + text + Environment.NewLine);
+			}
+		}
+	}
 }

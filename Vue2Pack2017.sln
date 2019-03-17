@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.js Pack", "src\VuePack.csproj", "{C692EEF9-4189-4E7B-B2D8-873552B4A15D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuePack", "src\VuePack.csproj", "{C692EEF9-4189-4E7B-B2D8-873552B4A15D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D166EEB4-832B-46C1-867F-CB589787D6BF}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{369DB837-A627-4AA2-86FC-C742D63AAAD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +24,15 @@ Global
 		{C692EEF9-4189-4E7B-B2D8-873552B4A15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C692EEF9-4189-4E7B-B2D8-873552B4A15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C692EEF9-4189-4E7B-B2D8-873552B4A15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369DB837-A627-4AA2-86FC-C742D63AAAD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369DB837-A627-4AA2-86FC-C742D63AAAD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369DB837-A627-4AA2-86FC-C742D63AAAD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369DB837-A627-4AA2-86FC-C742D63AAAD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F087C90-EBCB-4B69-90F2-A374954C8A65}
 	EndGlobalSection
 EndGlobal
