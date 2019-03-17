@@ -177,7 +177,10 @@ namespace VuePack
 
 			foreach (var name in _coreDirectives.Keys)
 			{
-				list.Add(CreateItem(name, _coreDirectives[name], context.Session));
+				// for these we need to add ":" afterwards and retrigger intellisense with proper suggestions
+				if (name == "v-bind" || name == "v-on")
+					list.Add(CreateItemRetrigger(name, ":", _coreDirectives[name], context.Session));
+				else list.Add(CreateItem(name, _coreDirectives[name], context.Session));
 			}
 
 			foreach (var name in _coreAttrs.Keys)

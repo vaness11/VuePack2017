@@ -9,11 +9,11 @@ namespace VuePack.Helpers
 {
 	public static class ComponentDataParser
 	{
-		public static ComponentData Parse(string content)
+		public static ComponentData[] Parse(string content)
 		{
 			if (string.IsNullOrWhiteSpace(content))
 				throw new ArgumentNullException(nameof(content));
-			return JsonConvert.DeserializeObject<ComponentData>(content);
+			return JsonConvert.DeserializeObject<ComponentData[]>(content);
 		}
 	}
 }

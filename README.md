@@ -10,7 +10,7 @@ Contains HTML Intellisense and code snippets for the
 [Vue.js](http://vuejs.org)
 JavaScript library
 
-See the [changelog](CHANGELOG.md) for changes and roadmap.
+See the [Releases](https://github.com/vaness11/VuePack2017/releases) for changes.
 
 ## Features
 

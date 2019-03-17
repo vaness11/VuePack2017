@@ -49,5 +49,11 @@ namespace VuePack
 			string desc = description + Environment.NewLine + Environment.NewLine + Vsix.Name;
 			return new HtmlCompletion(name, name, desc, _icon, null, session);
 		}
+
+		protected HtmlCompletion CreateItemRetrigger(string name, string suffix, string description, ICompletionSession session)
+		{
+			string desc = description + Environment.NewLine + Environment.NewLine + Vsix.Name;
+			return new HtmlCompletion(name, name + suffix, desc, _icon, null, 0, true, session);
+		}
 	}
 }

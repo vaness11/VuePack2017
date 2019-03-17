@@ -99,7 +99,8 @@ namespace VuePack
 		{
 			string content = File.ReadAllText(file);
 			var data = ComponentDataParser.Parse(content);
-			_cache[data.Name] = data;
+			foreach(var item in data)
+				_cache[item.Name] = item;
 		}
 
 		private static List<string> GetFiles(string path, string pattern)

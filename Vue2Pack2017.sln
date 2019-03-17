@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuePack", "src\VuePack.cspr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D166EEB4-832B-46C1-867F-CB589787D6BF}"
 	ProjectSection(SolutionItems) = preProject
-		appveyor.yml = appveyor.yml
-		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 	EndProjectSection
 EndProject

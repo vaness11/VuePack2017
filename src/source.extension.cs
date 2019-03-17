@@ -12,7 +12,7 @@ namespace VuePack
 								public const string Description = @"Contains HTML Intellisense and code snippets for the Vue.js 2.6 JavaScript library.
 Based on Mads Kristensen original extension VuePack2017.";
 								public const string Language = "en-US";
-								public const string Version = "2.1";
+								public const string Version = "2.1.1";
 								public const string Author = "Ivan G";
 								public const string Tags = "vue.js, snippets, javascript, vuejs, vue";
 				}
